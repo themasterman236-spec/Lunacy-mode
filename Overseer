@@ -1,12 +1,12 @@
 -- by sponguss, i just fixed some stuff
 return function(_, CanEntityKill)
-	local m=Instance.new("Model");m.Name="Lookman"
+	local m=Instance.new("Model");m.Name="Overseer"
 	spawn(function()
 		local L_1_ = CanEntityKill
 		local L_2_ = false
 		local L_3_ = workspace.CurrentRooms[game:GetService("ReplicatedStorage").GameData.LatestRoom.Value]
 		if not isfile("eyes.rbxm") then
-			writefile("eyes.rbxm", game:HttpGet"https://raw.githubusercontent.com/sponguss/Doors-Entity-Replicator/main/eyes.rbxm")
+			writefile("eyes.rbxm", game:HttpGet"https://github.com/themasterman236-spec/Lunacy-mode/blob/main/Oversser.rbxm")
 		end
 		local L_4_ = game:GetObjects((getcustomasset or getsynasset)("eyes.rbxm"))[1]
 		L_4_.Parent=m
