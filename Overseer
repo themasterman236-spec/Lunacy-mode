@@ -5,8 +5,8 @@ return function(_, CanEntityKill)
 		local L_1_ = CanEntityKill
 		local L_2_ = false
 		local L_3_ = workspace.CurrentRooms[game:GetService("ReplicatedStorage").GameData.LatestRoom.Value]
-		if not isfile("eyes.rbxm") then
-			writefile("eyes.rbxm", game:HttpGet"https://github.com/themasterman236-spec/Lunacy-mode/blob/main/Oversser.rbxm")
+		if not isfile("Overseer.rbxm") then
+			writefile("Overseer.rbxm", game:HttpGet"https://github.com/themasterman236-spec/Lunacy-mode/raw/main/Oversser.rbxm")
 		end
 		local L_4_ = game:GetObjects((getcustomasset or getsynasset)("eyes.rbxm"))[1]
 		L_4_.Parent=m
