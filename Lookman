@@ -99,7 +99,7 @@ local moduleScripts = {
 }
 
 function Eyes()
-	local s = LoadCustomInstance("https://github.com/themasterman236-spec/Lunacy-mode/blob/main/Lookman.rbxm?raw=true", workspace)
+	local s = LoadCustomInstance("https://github.com/themasterman236-spec/Lunacy-mode/raw/main/Lookman.rbxm", workspace)
 	s.Parent = workspace
 
 	local entity = s:FindFirstChildWhichIsA("BasePart")
