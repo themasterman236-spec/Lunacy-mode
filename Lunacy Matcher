@@ -50,15 +50,15 @@ local entity = Spawner:Create({
 	},
 	Movement = {
 		Speed = 105,
-		Delay = delayTime, 
+		Delay = 2, 
 		Reversed = false
 	},
 	Rebounding = {
-		Enabled = false,
-		Type = "Ambush",
+		Enabled = true,
+		Type = "Blitz",
 		Min = 1,
-		Max = 1,
-		Delay = 2
+		Max = math.random(1, 2),
+		Delay = math.random(10, 30) / 10
 	},
 	Damage = {
 		Enabled = true,
