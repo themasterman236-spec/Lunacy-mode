@@ -29,7 +29,7 @@ local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/eoyou
 local entity = Spawner:Create({
 	Entity = {
 		Name = "unknown Matcher",
-		Asset = "https://github.com/themasterman236-spec/elizabp-92/raw/main/UNKNOWN%20matcher.rbxm",
+		Asset = "https://github.com/themasterman236-spec/Lunacy-mode/raw/main/UNKNOWN%20matcher.rbxm",
 		HeightOffset = -1
 	},
 	Lights = {
@@ -113,6 +113,19 @@ local tween = game:GetService("TweenService")
 tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(0.5), {Contrast = 0}):Play()
 local TweenService = game:GetService("TweenService")
 local TW = TweenService:Create(game.Lighting.MainColorCorrection, TweenInfo.new(0.5),{TintColor = Color3.fromRGB(255, 255, 255)})
+TW:Play()
+
+local roast = Instance.new("Sound")
+roast.Parent = workspace
+roast.Name = "roast"
+roast.SoundId = "rbxassetid://9125936117"
+roast.Volume = 10
+roast.Pitch = 1.5
+roast:Play()
+
+wait(0.6)
+
+roast:Destroy()
 	else
 		print("Entity has finished rebounding")
 	end
