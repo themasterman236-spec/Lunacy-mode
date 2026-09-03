@@ -1,4 +1,4 @@
-game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(255, 0, 255)
+game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(88, 77, 76)
 game.Lighting.MainColorCorrection.Contrast = 0.3
 local tween = game:GetService("TweenService")
 tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(0.5), {Contrast = 0}):Play()
@@ -11,7 +11,7 @@ roast.Parent = workspace
 roast.Name = "roast"
 roast.SoundId = "rbxassetid://9125936117"
 roast.Volume = 10
-roast.Pitch = 5
+roast.Pitch = 1.5
 roast:Play()
 
 wait(0.6)
@@ -28,8 +28,8 @@ local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/eoyou
 
 local entity = Spawner:Create({
 	Entity = {
-		Name = "Lunacy Matcher",
-		Asset = "https://github.com/themasterman236-spec/Lunacy-mode/raw/main/Luncay%20Matcher.rbxm",
+		Name = "unknown Matcher",
+		Asset = "https://github.com/themasterman236-spec/elizabp-92/raw/main/UNKNOWN%20matcher.rbxm",
 		HeightOffset = -1
 	},
 	Lights = {
@@ -107,6 +107,12 @@ end)
 entity:SetCallback("OnRebounding", function(startOfRebound: boolean)
 	if startOfRebound then
 		print("Entity has started rebounding")
+game.Lighting.MainColorCorrection.TintColor = Color3.fromRGB(88, 77, 76)
+game.Lighting.MainColorCorrection.Contrast = 0.3
+local tween = game:GetService("TweenService")
+tween:Create(game.Lighting.MainColorCorrection, TweenInfo.new(0.5), {Contrast = 0}):Play()
+local TweenService = game:GetService("TweenService")
+local TW = TweenService:Create(game.Lighting.MainColorCorrection, TweenInfo.new(0.5),{TintColor = Color3.fromRGB(255, 255, 255)})
 	else
 		print("Entity has finished rebounding")
 	end
