@@ -30,7 +30,7 @@ local entity = Spawner:Create({
 	Entity = {
 		Name = "Lunacy Matcher",
 		Asset = "https://github.com/themasterman236-spec/Lunacy-mode/raw/main/Luncay%20Matcher.rbxm",
-		HeightOffset = 0.5
+		HeightOffset = -1
 	},
 	Lights = {
 		Flicker = {
