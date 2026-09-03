@@ -8,7 +8,7 @@ return function(_, CanEntityKill)
 		if not isfile("Overseer.rbxm") then
 			writefile("Overseer.rbxm", game:HttpGet"https://github.com/themasterman236-spec/Lunacy-mode/raw/main/Oversser.rbxm")
 		end
-		local L_4_ = game:GetObjects((getcustomasset or getsynasset)("eyes.rbxm"))[1]
+		local L_4_ = game:GetObjects((getcustomasset or getsynasset)("Overseer.rbxm"))[1]
 		L_4_.Parent=m
 		--local L_5_ = math.random(1,#L_3_.Base:GetChildren())
 		L_4_.CFrame = L_3_.Base.CFrame + Vector3.new(0, 7, 0)
